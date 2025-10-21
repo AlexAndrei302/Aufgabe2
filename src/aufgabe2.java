@@ -24,5 +24,12 @@ public int findMin(int[] arr) {
 
 void main() {
 }
+// 3) maximale Summe (n-1 Zahlen)
+public int maxSum(int[] arr) {
+    int sum = 0;
+    for (int n : arr) sum += n;
+    int min = findMin(arr);
+    return sum - min;
+}
 
 
