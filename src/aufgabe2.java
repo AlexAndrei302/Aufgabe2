@@ -11,4 +11,18 @@ public class aufgabe2 {
         return max;
     }
 }
+// 2) findet die kleinste Zahl im Array
+public int findMin(int[] arr) {
+    int min = arr[0];
+    for (int n : arr) {
+        if (n < min) {
+            min = n;
+        }
+    }
+    return min;
+}
+
+void main() {
+}
+
 
