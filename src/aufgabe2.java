@@ -31,5 +31,18 @@ public int maxSum(int[] arr) {
     int min = findMin(arr);
     return sum - min;
 }
+// 4) minimale Summe (n-1 Zahlen)
+public int minSum(int[] arr) {
+    int sum = 0;
+    for (int n : arr) sum += n;
+        int max = arr[0];
+        for (int n : arr) {
+            if (n > max) {
+                max = n;
+            }
+        }
+    return sum - max;
+}
+
 
 
